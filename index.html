@@ -3,80 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTech - Guia de Maquinário Agrícola</title>
+    <title>AgroSystems | Soluções em Maquinário Agrícola</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Agro<span>Tech</span></div>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#maquinas">Maquinários</a></li>
+    <header class="navbar">
+        <div class="container-nav">
+            <div class="logo">AGRO<span>SYSTEMS</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
                 <li><a href="#manutencao">Manutenção</a></li>
-                <li><a href="#seguranca">Segurança</a></li>
+                <li><a href="#contato" class="nav-btn">Falar com Consultor</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Domine o Campo com Tecnologia</h1>
-            <p>O guia completo para operação, manutenção e segurança de máquinas agrícolas.</p>
-            <a href="#maquinas" class="btn">Começar Agora</a>
-        </div>
-    </section>
-
-    <section id="maquinas" class="container">
-        <h2>Tipos de Maquinário</h2>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-tractor fa-3x"></i>
-                <h3>Tratores</h3>
-                <p>A força motriz da fazenda. Aprenda sobre sistemas de tração e acoplamento de implementos.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-seedling fa-3x"></i>
-                <h3>Colheitadeiras</h3>
-                <p>Tecnologia de ponta para colheita eficiente de grãos, ajustes de cilindro e peneiras.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-spray-can fa-3x"></i>
-                <h3>Pulverizadores</h3>
-                <p>Precisão na aplicação de defensivos e fertilizantes foliares.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="manutencao" class="bg-light">
-        <div class="container">
-            <h2>Guia de Manutenção Preventiva</h2>
-            <div class="content-flex">
-                <div class="text">
-                    <ul>
-                        <li><strong>Diário:</strong> Verificação de óleo, água e pneus.</li>
-                        <li><strong>Semanal:</strong> Lubrificação de pinos e verificação de filtros.</li>
-                        <li><strong>Sazonal:</strong> Revisão completa antes do plantio ou colheita.</li>
-                    </ul>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="badge">Líder em Mecanização Agrícola 2026</span>
+                <h1>Produtividade Máxima com <br>Tecnologia de Precisão</h1>
+                <p>Otimize sua colheita com manuais avançados de operação e gestão de frotas agrícolas de alta performance.</p>
+                <div class="hero-btns">
+                    <a href="#solucoes" class="btn-primary">Ver Maquinários</a>
+                    <a href="#manutencao" class="btn-secondary">Checklist de Manutenção</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="seguranca" class="container">
-        <h2>Segurança no Trabalho (NR-31)</h2>
-        <blockquote>
-            "Segurança não é um acessório, é a base da produção."
-        </blockquote>
-        <p>Sempre utilize EPIs, verifique o triângulo de segurança e nunca realize manutenções com o motor ligado.</p>
+    <section id="solucoes" class="section">
+        <div class="container">
+            <h2 class="section-title">Nossas Soluções</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-img tractor-img"></div>
+                    <div class="card-body">
+                        <h3>Tratores de Alta Potência</h3>
+                        <p>Domine terrenos difíceis com sistemas de tração integral e telemetria avançada em tempo real.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img combine-img"></div>
+                    <div class="card-body">
+                        <h3>Colheitadeiras Inteligentes</h3>
+                        <p>Sistemas automatizados que reduzem a perda de grãos em até 15% através de IA e sensores.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img spray-img"></div>
+                    <div class="card-body">
+                        <h3>Pulverização Autônoma</h3>
+                        <p>Aplicação precisa de defensivos com bicos de controle individual e redução de desperdício.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 AgroTech - Manual Digital de Maquinário</p>
+    <section id="tecnologia" class="tech-section">
+        <div class="container tech-grid">
+            <div class="tech-text">
+                <h2>Agricultura 4.0</h2>
+                <p>A integração de GPS, sensores IoT e análise de dados transformou o campo. Nossos guias ensinam como configurar:</p>
+                <ul class="tech-list">
+                    <li><i class="fas fa-check-circle"></i> Piloto Automático e GPS RTK</li>
+                    <li><i class="fas fa-check-circle"></i> Monitoramento de Plantio em tempo real</li>
+                    <li><i class="fas fa-check-circle"></i> Mapas de Produtividade Georreferenciados</li>
+                </ul>
+            </div>
+            <div class="tech-image">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=600&q=80" alt="Tablet no campo">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>AGRO SYSTEMS</h3>
+                <p>Transformando o futuro da agricultura através da mecanização inteligente.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Suporte Técnico</h4>
+                <p><i class="fas fa-phone"></i> 0800-700-4000</p>
+                <p><i class="fas fa-envelope"></i> suporte@agrosystems.com.br</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgroSystems Brasil. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="main.js"></script>
 </body>
 </html>
